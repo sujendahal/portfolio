@@ -21,7 +21,7 @@ const icons = [
 const SocialIcons = () => {
   return (
     <div className="flex justify-center md:justify-start space-x-4 mb-6 sm:mb-6">
-      {icons.map((icon, index) => (
+      {icons.map((icon) => (
         <a
           href={icon.href}
           target="_blank"

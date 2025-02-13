@@ -6,12 +6,12 @@ import Button from "./Button";
 
 const Home = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen pt-16 md:pt-24">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen pt-16 md:pt-24 animate-fadeIn">
       <div className="md:w-1/2 flex justify-center">
         <img
           src={HeroImage}
           alt="Sujen Dahal"
-          className="w-32 sm:w-48 md:w-48 lg:w-80 rounded-full shadow-lg hover:scale-110 duration-300"
+          className="w-32 sm:w-48 md:w-56 lg:w-72 xl:w-80 rounded-full shadow-lg hover:scale-110 duration-300"
         />
       </div>
 
@@ -47,7 +47,11 @@ const Home = () => {
           make a meaningful impact in the tech world!
         </p>
         <SocialIcons></SocialIcons>
-        <Button text="Hire Me" href="sujen.rocker@gmail.com"></Button>
+        <Button
+          text="Hire Me"
+          href="mailto:sujen.rocker@gmail.com"
+          className="hover:scale-105 transition-transform duration-300"
+        ></Button>
       </div>
     </section>
   );
